@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz do São Paulo FC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="menu-principal" class="tela">
+        <h1 class="titulo-principal">Quiz Do São Paulo FC</h1>
+        <div class="logos">
+            <img src="Imagens/sao-paulo-futebol-clube-logo-png_seeklogo-122586.png" alt="Logo SPFC"
+                class="logo-esquerda">
+            <img src="Imagens/sao-paulo-futebol-clube-logo-png_seeklogo-122586.png" alt="Logo SPFC"
+                class="logo-direita">
+        </div>
+        <div class="botoes-menu">
+            <div class="botao" id="btn-comecar">Começar</div>
+            <div class="botao" id="btn-como-jogar">Como Jogar</div>
+            <div class="botao" id="btn-hino">Hino Do SPFC</div>
+        </div>
+    </div>
+
+    <div id="como-jogar" class="tela">
+        <h1 class="titulo-secundario">Bem-vindo(a) ao Quiz do São Paulo FC!</h1>
+        <h2 class="subtitulo">Prove que você é um(a) verdadeiro(a) tricolor.</h2>
+        <p class="texto-instrucoes">
+            Você terá que responder a 10 perguntas com 4 alternativas cada.<br>
+            Apenas uma alternativa está correta. Se você errar, terá que recomeçar.
+        </p>
+        <div class="botao-voltar" id="btn-voltar-instrucoes">Voltar</div>
+    </div>
+
+    <div id="tela-hino" class="tela">
+        <div class="conteudo-hino">
+            <div class="coluna-hino">
+                <p>Salve o Tricolor Paulista</p>
+                <p>Amado clube brasileiro</p>
+                <p>Tu és forte, tu és grande</p>
+                <p>Dentre os grandes, é o primeiro</p>
+                <p>Tu és forte, tu és grande</p>
+                <p>Dentre os grandes, é o primeiro</p>
+                <br>
+                <p>Oh, Tricolor</p>
+                <p>Clube bem amado</p>
+                <p>As tuas glórias</p>
+                <p>Vêm do passado</p>
+                <br>
+                <p>Oh, Tricolor</p>
+                <p>Clube bem amado</p>
+                <p>As tuas glórias</p>
+                <p>Vêm do passado</p>
+            </div>
+            <div class="coluna-hino">
+                <p>São teus guias brasileiros</p>
+                <p>Que te amam ternamente</p>
+                <p>De São Paulo tens o nome</p>
+                <p>Que ostentas dignamente</p>
+                <p>De São Paulo tens o nome</p>
+                <p>Que ostentas dignamente</p>
+                <br>
+                <p>Oh, Tricolor</p>
+                <p>Clube bem amado</p>
+                <p>As tuas glórias</p>
+                <p>Vêm do passado</p>
+                <br>
+                <p>Oh, Tricolor</p>
+                <p>Clube bem amado</p>
+                <p>As tuas glórias</p>
+                <p>Vêm do passado</p>
+            </div>
+        </div>
+        <div class="lateral-hino">
+            <img src="Imagens/sao-paulo-futebol-clube-logo-png_seeklogo-122586.png" alt="Logo SPFC"
+                class="logo-spfc-hino">
+            <div class="botao-voltar" id="btn-voltar-hino">Voltar</div>
+            <audio id="hino-audio" controls>
+                <source src="Audio/hino-sao-paulo-fc.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <div id="tela-quiz" class="tela">
+        <div id="pergunta"></div>
+        <div id="opcoes"></div>
+    </div>
+
+    <div id="tela-vitoria" class="tela">
+        <h1 class="titulo-vitoria">Você Ganhou</h1>
+        <div class="logos-vitoria">
+            <img src="Imagens/sao-paulo-futebol-clube-logo-png_seeklogo-122586.png" alt="Logo SPFC"
+                class="logo-vitoria">
+            <div class="botao-recomecar" id="btn-reiniciar-vitoria">Jogar Novamente</div>
+            <img src="Imagens/sao-paulo-futebol-clube-logo-png_seeklogo-122586.png" alt="Logo SPFC"
+                class="logo-vitoria">
+        </div>
+        <h2 class="subtitulo-vitoria">Você é um tricolor</h2>
+    </div>
+
+    <div id="tela-erro" class="tela">
+        <h1 class="titulo-erro">Você Errou</h1>
+        <div class="logos-erro">
+            <img src="Imagens/sao-paulo-futebol-clube-logo-png_seeklogo-122586.png" alt="Logo SPFC" class="logo-erro">
+            <div class="botao-recomecar" id="btn-recomecar">Recomeçar</div>
+            <img src="Imagens/sao-paulo-futebol-clube-logo-png_seeklogo-122586.png" alt="Logo SPFC" class="logo-erro">
+        </div>
+        <h2 class="subtitulo-erro">Você não é um tricolor</h2>
+    </div>
+
+    <div id="tela-final" class="tela">
+        <h1 class="titulo-final">Parabéns!</h1>
+        <h2 class="subtitulo">Você completou o quiz do São Paulo FC!</h2>
+        <div class="botao" id="btn-reiniciar">Jogar Novamente</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
